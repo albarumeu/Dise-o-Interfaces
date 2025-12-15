@@ -1,0 +1,100 @@
+body{
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagina-principal{
+    width: 800px;
+    max-width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+.cabecera {
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid #470fd4;
+    border-radius: 10px;
+}
+
+.campos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.campos label {
+    font-weight: bold;
+    margin-left: 15px;
+    white-space: nowrap; /*Para que no rompa las etiquetas*/
+}
+.inputs{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-right: 25px;
+}
+
+.contenido{
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid #470fd4;
+    border-radius: 10px;
+    
+}   
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: #470fd4;
+}
+p{
+    font-size: 12px;
+    text-align: center;
+}
+.factores{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+.cajas{
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.titulos{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.lista{
+    
+}
+
+.conclusion{
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid #470fd4;
+    border-radius: 10px;
+}
+.conclusion p{
+    font-size: 14px;
+    text-align: justify;
+}
+.conclusion label{
+    border: none;
+    border-bottom: 1px solid black;
+    height: 60px; /* Para que el estudiante tenga más espacio para escribir */
+    margin-top: 5px;
+}

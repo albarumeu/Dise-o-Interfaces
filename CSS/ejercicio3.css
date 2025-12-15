@@ -1,0 +1,91 @@
+:root {
+    --fondo: #FFD700; 
+    --borde: #f68f11;
+    --btn-rosa: #FF4081;
+    --btn-operadores: #40C4FF;    
+    --btn-numeros: #FFFFFF;  
+    --sombra: #555555; 
+    --border-radius: 15px;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+}
+
+.fondo {
+    width: 300px; 
+    background-color: var(--borde);
+    border-radius: var(--border-radius);
+    box-shadow: 10px 10px 15px var(--sombra);
+    border: 5px solid black;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.contenido{
+    background-color: var(--fondo);
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+.caja {
+    background-color: var(--borde);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.contenedor{
+    background-color: #FFFFFF;
+    border: 4px solid black;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;/*Para que este dentro de la caja*/
+    border-radius: 5px;
+
+}
+
+.contenedor p{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    
+}
+
+
+.botones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 8px; 
+    
+}
+.botones button {
+    border: 3px solid black;
+    padding: 15px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn-rosa{
+    background-color: var(--btn-rosa);
+
+}
+.btn-numeros{
+    background-color: var(--btn-numeros);
+
+}
+.btn-operadores{
+    background-color: var(--btn-operadores);
+
+}
