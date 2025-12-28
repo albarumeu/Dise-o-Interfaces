@@ -4,73 +4,86 @@ body{
     padding: 20px;
     display: flex;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .pagina-principal{
     width: 800px;
     max-width: 100%;
     background-color: #ffffff;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .cabecera {
     margin: 30px;
     padding: 20px;
-    border: 1px solid #470fd4;
-    border-radius: 10px;
+    border: 2px solid #2c0c7c;
+    border-radius: 15px;
 }
 
 .campos{
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+    gap: 20px;
 }
 
 .campos label {
     font-weight: bold;
-    margin-left: 15px;
-    white-space: nowrap; /*Para que no rompa las etiquetas*/
+    white-space: nowrap;
 }
 .inputs{
     border: none;
-    border-bottom: 1px solid black;
-    margin-right: 25px;
+    border-bottom: 1px solid #999;
+    flex-grow: 1;
+    outline: none;
+    font-size: 14px;
+    padding-left: 5px;
 }
 
 .contenido{
     margin: 30px;
     padding: 20px;
-    border: 1px solid #470fd4;
-    border-radius: 10px;
+    border: 2px solid #2c0c7c;
+    border-radius: 15px;
     
 }   
 
 h1{
     text-align: center;
     font-size: 35px;
-    color: #470fd4;
+    color: #2c0c7c;
+    margin: 0;
 }
 p{
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
 }
 .factores{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-top: 30px;
+    gap: 40px 60px;
+    margin-bottom: 30px;
 }
 .cajas{
-    border: 1px solid #ccc;
     padding: 15px;
-    box-sizing: border-box;
 }
 .titulos{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    gap: 15px;
+}
+.descripcion{
+    font-size: 14px;
+    text-align: justify;
+}
+img{
+    width: 90px;
+    height: auto;
+    margin-right: 15px;
+    display: block;
 }
 h2{
     font-size: 20px;
@@ -78,23 +91,39 @@ h2{
     margin: 0;
 }
 
-.lista{
-    
+.reglon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.numero{
+    background-color: #2c0c7c;
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px; 
+    margin-right: 10px;
+    flex-shrink: 0;
 }
 
 .conclusion{
     margin: 30px;
     padding: 20px;
-    border: 1px solid #470fd4;
+    border: 2px solid #2c0c7c;
     border-radius: 10px;
 }
 .conclusion p{
     font-size: 14px;
     text-align: justify;
+    margin: 0;
 }
-.conclusion label{
-    border: none;
-    border-bottom: 1px solid black;
-    height: 60px; /* Para que el estudiante tenga más espacio para escribir */
-    margin-top: 5px;
+.lineas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre las líneas */
+    margin-top: 10px;
 }
