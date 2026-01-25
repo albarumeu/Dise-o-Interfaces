@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Club Deportivo </title>
+    <link href="./output.css" rel="stylesheet">    
+</head>
+<body class="bg-fondo-claro dark:bg-gray-900">
+    <nav class="bg-fondo p-4 shadow-md dark:bg-gray-800 ">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="font-bold text-2xl dark:text-white">LOGO CLUB</span>
+            </div>
+
+            <ul class="flex gap-6">
+                <li><a href="#" class="hover:text-blue-700 dark:text-gray-300 dark:hover:text-blue-400">Inicio</a></li>
+                <li><a href="#" class="hover:text-blue-700 dark:text-gray-300 dark:hover:text-blue-400">Equipo</a></li>
+                <li><a href="#" class="hover:text-blue-700 dark:text-gray-300 dark:hover:text-blue-400">Horarios</a></li>
+                <li><a href="#" class="hover:text-blue-700 dark:text-gray-300 dark:hover:text-blue-400">Contacto</a></li>
+            </ul>
+
+            <input class="btn-oscuro" type="button" id="modoOscuro" value="🌙 Modo oscuro">
+
+        </div>
+        
+    </nav>
+
+    <header class="bg-gray-700 text-white py-20 px-6 text-center dark:bg-gray-950">
+        <div class="flex flex-col justify-center items-center">
+            <h1 class="font-bold text-4xl text-center">Club Deportivo Morvedre</h1>
+            
+            <p class="text-xl md:text-2xl italic text-center pt-6 mb-8">Supera tus límites, alcanza la gloria.</p>
+            
+            <button class="btn-socio shadow-club">Hazte socio</button>
+        </div>
+    </header>
+
+    <section class="py-16 px-6 bg-azul dark:bg-gray-800">
+        <h2 class="font-bold text-3xl text-center mb-8 dark:text-white">¿Por qué elegirnos?</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <article class="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-blue-600 dark:bg-gray-700">
+                <h3 class="font-bold text-xl mb-3 dark:text-white">Instalaciones</h3>
+                <p class="italic dark:text-gray-300">Gimnasio de última generación y campos reglamentarios.</p>
+            </article>
+
+            <article class="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-blue-600 dark:bg-gray-700">
+                <h3 class="font-bold text-xl mb-3 dark:text-white">Entrenadores</h3>
+                <p class="italic dark:text-gray-300">Profesionales titulados con experiencia en alto rendimiento.</p>
+            </article>
+
+            <article class="bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-blue-600 dark:bg-gray-700">
+                <h3 class="font-bold text-xl mb-3 dark:text-white">Competiciones</h3>
+                <p class="italic dark:text-gray-300">Participamos en ligas regionales y torneos nacionales.</p>
+
+            </article>
+
+        </div>
+    </section>
+
+    <footer class="text-center mt-4 text-sm dark:text-white">
+        <p>&copy; 2024 Club Deportivo Morvedre. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const oscuro = document.getElementById('modoOscuro');
+            oscuro.addEventListener('click', function() {
+                document.documentElement.classList.toggle('dark');
+            });
+        });
+    </script>
+    
+</html>

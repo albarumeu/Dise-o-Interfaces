@@ -1,0 +1,18 @@
+{
+  "name": "noticiero-web",
+  "version": "1.0.0",
+  "description": "Ejercicio de clase Tailwind CLI",
+  "license": "ISC",
+  "author": "ALBA RUMEU",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {}
+}

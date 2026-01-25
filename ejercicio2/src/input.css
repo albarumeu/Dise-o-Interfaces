@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*Personalización del tema*/
+@theme {
+    --color-azul: #93c5fd;         /* Era blue-300 */
+    --color-azul-fuerte: #1e40af;  /* Era blue-800 (hover) */
+    --color-fondo: #fde68a;        /* Era amber-200 */
+    --color-fondo-claro: #fef3c7;  /* Era amber-100 */
+    --shadow-club: 0 10px 15px -3px rgba(96, 165, 250, 0.5);
+}
+
+/*Componentes reutilizable*/
+
+@utility btn-socio {
+    @apply bg-azul text-black rounded-full text-center inline-block;
+
+    @apply py-3 px-8;
+
+    &:hover {
+        @apply bg-azul-fuerte text-white;
+    }
+
+    @variant lg {
+        @apply py-4 px-12 text-xl
+    }
+}
+
+@custom-variant dark (&:where(.dark, .dark * ));
